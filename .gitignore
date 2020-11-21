@@ -1,4 +1,10 @@
+/mpd/.config/mpd/database
+/mpd/.config/mpd/database.old
 /mpd/.config/mpd/log
+/mpd/.config/mpd/pid
+/mpd/.config/mpd/playlists
+/mpd/.config/mpd/state
+/mpd/.config/mpd/sticker.sql
 
 /newsboat/.config/newsboat/cache.db
 /newsboat/.config/newsboat/history.cmdline
