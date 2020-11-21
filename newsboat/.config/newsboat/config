@@ -1,0 +1,82 @@
+
+
+auto-reload yes
+reload-time 15
+notify-always yes
+notify-program "notify-send"
+notify-format "%d neue Artikel (%n ungelesene Artikel, %f ungelesene Feeds)"
+#confirm-exit yes
+show-read-feeds no
+suppress-first-reload no
+prepopulate-query-feeds yes
+#browser /home/alexander/scripts/newsboat-browser/newsboat-browser.sh &
+#browser brave
+#feed-sort-order title asc
+
+# listnormal: a normal list item
+# listfocus: the currently selected list item
+# listnormal_unread: an unread list item
+# listfocus_unread: the currently selected and unread list item
+# info: the info bars on top and bottom
+# background: the application background
+# article: the article text
+# color <element> <foreground color> <background color> [<attribute> ...]
+
+
+color listnormal blue default
+color listfocus black yellow standout bold
+color listnormal_unread cyan default
+color listfocus_unread yellow default bold
+color info red black bold
+color article cyan default
+
+
+
+# external-url-viewer "urlscan -dc -r 'linkhandler {}'"
+
+bind-key j down
+bind-key k up
+# bind-key j next articlelist
+# bind-key k prev articlelist
+# bind-key J next-feed articlelist
+# bind-key K prev-feed articlelist
+# bind-key G end
+# bind-key g home
+# bind-key d pagedown
+# bind-key u pageup
+bind-key l open
+bind-key h quit
+# bind-key a toggle-article-read
+# bind-key n next-unread
+# bind-key N prev-unread
+# bind-key D pb-download
+# bind-key U show-urls
+# bind-key x pb-delete
+bind-key u toggle-show-read-feeds
+# color listnormal cyan default
+# color listfocus black yellow standout bold
+# color listnormal_unread blue default
+# color listfocus_unread yellow default bold
+# color info red black bold
+# color article cyan default
+
+#browser "firefox %u &"
+browser qutebrowser
+# macro , open-in-browser
+#macro v set browser "tsp youtube-dl --add-metadata -ic && tsp notify-send 'Download done'"; open-in-browser ; set browser "firefox %u &"
+
+
+macro v set browser "tsp youtube-dl --add-metadata -ic %u && notify-send 'Download queued' && tsp notify-send 'Download done'"; open-in-browser ; set browser "firefox %u &"
+
+macro a set browser "tsp youtube-dl -xc --audio-format mp3 %u && notify-send 'Download queued' && tsp notify-send 'Download done'"; open-in-browser ; set browser "firefox %u &"
+macro s set browser "setsid nohup mpv"; open-in-browser ; set browser "firefox %u &"
+# macro w set browser "w3m"; open-in-browser ; set browser "firefox %u &"
+# macro p set browser "dmenuhandler"; open-in-browser ; set browser "firefox %u &"
+# macro c set browser "xsel -b <<<" ; open-in-browser ; set browser "firefox %u &"
+#
+
+
+#macro o set browser "qutebrowser %u"; open-in-browser ; set browser "firefox %u &"
+
+#urls-source "opml"
+#opml-url "https://feedly.com/v3/opml?feedlyToken=A9AdbSMHqwNJVF7_xCgkbfn9BL5s9qhZmoChFKaLSFPAnE4wO-pWRfMrRVANvpsRTo01kNSlKnI7RsGdGIm1ZRTDivIDxXWI2OCxslUnnxI0rW3y2mHzrBrwDoHQC98Kv4fijoGNcJHMe8g1lw_8eDkEi5PFRsJCuOEVDEiwlPuxrVisqpwHmbuHHbcnuXYxJMxcbwhnBAZQjDK7FedvwWOBjkSTFhYvvf4Wj_6BBgdnVA%3Afeedly"
