@@ -1,4 +1,4 @@
-#dotfiles
+# dotfiles
 
 **GNU/Stow compatible**
 
