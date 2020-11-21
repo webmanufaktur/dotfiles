@@ -1,3 +1,5 @@
+/mpd/.config/mpd/log
+
 /newsboat/.config/newsboat/cache.db
 /newsboat/.config/newsboat/history.cmdline
 /newsboat/.config/newsboat/history.search
