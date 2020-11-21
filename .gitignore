@@ -5,3 +5,7 @@
 /newsboat/.config/newsboat/urls
 
 /nvim/.config/nvim/plugged/
+
+/qutebrowser/.config/qutebrowser/bookmarks/
+/qutebrowser/.config/qutebrowser/qsettings/
+/qutebrowser/.config/qutebrowser/quickmarks
