@@ -13,6 +13,8 @@ echo "-> Restoring i3..."
 stow i3
 echo "-> Restoring imwheel..."
 stow imwheel
+echo "-> Restoring mimeapps.list..."
+stow mimeapps.list
 echo "-> Restoring mpd..."
 stow mpd
 echo "-> Restoring ncmpcpp..."
