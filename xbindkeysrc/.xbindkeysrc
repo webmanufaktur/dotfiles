@@ -1,0 +1,47 @@
+# Alternative keybindings - especially for german keyboard layouts
+# Adds the ability to use Control + Alt instead of AltGr for some characters like brackets, tilde and backslash
+# interesting for german developers, designers and coders who need those keys often
+# Needed for this: xvkbd and xbindkeys
+# Needs to be loaded everytime you start i3 or X
+
+
+#{
+"xvkbd -xsendevent -text '{'"
+    m:0xc + c:16
+    Control+Alt + 7
+
+#[
+"xvkbd -xsendevent -text '['"
+    m:0xc + c:17
+    Control+Alt + 8
+
+#]
+"xvkbd -xsendevent -text ']'"
+    m:0xc + c:18
+    Control+Alt + 9
+
+#}
+"xvkbd -xsendevent -text '}'"
+    m:0xc + c:19
+    Control+Alt + 0
+
+#\
+"xvkbd -xsendevent -text '\[backslash]'"
+    m:0xc + c:20
+    Control+Alt + ssharp
+
+#~
+"xvkbd -xsendevent -text '\[asciitilde]'"
+    m:0xc + c:35
+    Control+Alt + plus
+
+#µ
+"xvkbd -xsendevent -text '\[mu]'"
+    m:0xc + c:58
+    Control+Alt + m
+
+
+#@
+"xvkbd -xsendevent -text '@'"
+    m:0x1c + c:24
+    Control+Alt+Mod2 + q

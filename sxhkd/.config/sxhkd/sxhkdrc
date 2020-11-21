@@ -1,0 +1,49 @@
+# super + ctrl + shift + space + Escape + Tab + alt
+
+super + Return
+	alacritty
+
+
+# Browser
+
+super + b
+    brave
+
+super + shift + b
+    brave --incognito
+
+super + o
+    opera
+
+super + f
+    firefox
+
+super + c
+    google-chrome-stable
+
+super + v
+    code
+
+super + shift + d
+    code & google-chrome-stable
+
+super + m
+    chromium
+
+super + s
+    qutebrowser
+
+super + p
+    pamac-manager
+
+super + e
+    pcmanfm
+
+super + t
+    thunderbird
+
+super + ctrl + y 
+    flameshot gui -p ~/Screenshots
+
+super + ctrl + c
+    flameshot full -p ~/Screenshots
