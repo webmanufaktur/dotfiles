@@ -1,0 +1,3 @@
+#dotfiles
+**GNU/Stow compatible**
+
