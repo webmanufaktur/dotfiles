@@ -1,13 +1,7 @@
-#
-# ~/.bashrc
-#
+#################
+###  .BASHRC  ###
+#################
 
-
-
-#export GITAWAREPROMPT=~/.bash/git-aware-prompt
-#source "${GITAWAREPROMPT}/main.sh"
-
-#source ~/.bash/git-aware-prompt/main.sh
 
 
 
@@ -15,32 +9,32 @@ HISTSIZE= HISTFILESIZE= # Infinite history.
 HISTCONTROL=ignoreboth
 [[ $- != *i* ]] && return
 
-colors() {
-	local fgc bgc vals seq0
-
-	printf "Color escapes are %s\n" '\e[${value};...;${value}m'
-	printf "Values 30..37 are \e[33mforeground colors\e[m\n"
-	printf "Values 40..47 are \e[43mbackground colors\e[m\n"
-	printf "Value  1 gives a  \e[1mbold-faced look\e[m\n\n"
-
-	# foreground colors
-	for fgc in {30..37}; do
-		# background colors
-		for bgc in {40..47}; do
-			fgc=${fgc#37} # white
-			bgc=${bgc#40} # black
-
-			vals="${fgc:+$fgc;}${bgc}"
-			vals=${vals%%;}
-
-			seq0="${vals:+\e[${vals}m}"
-			printf "  %-9s" "${seq0:-(default)}"
-			printf " ${seq0}TEXT\e[m"
-			printf " \e[${vals:+${vals+$vals;}}1mBOLD\e[m"
-		done
-		echo; echo
-	done
-}
+# colors() {
+# 	local fgc bgc vals seq0
+# 
+# 	printf "Color escapes are %s\n" '\e[${value};...;${value}m'
+# 	printf "Values 30..37 are \e[33mforeground colors\e[m\n"
+# 	printf "Values 40..47 are \e[43mbackground colors\e[m\n"
+# 	printf "Value  1 gives a  \e[1mbold-faced look\e[m\n\n"
+# 
+# 	# foreground colors
+# 	for fgc in {30..37}; do
+# 		# background colors
+# 		for bgc in {40..47}; do
+# 			fgc=${fgc#37} # white
+# 			bgc=${bgc#40} # black
+# 
+# 			vals="${fgc:+$fgc;}${bgc}"
+# 			vals=${vals%%;}
+# 
+# 			seq0="${vals:+\e[${vals}m}"
+# 			printf "  %-9s" "${seq0:-(default)}"
+# 			printf " ${seq0}TEXT\e[m"
+# 			printf " \e[${vals:+${vals+$vals;}}1mBOLD\e[m"
+# 		done
+# 		echo; echo
+# 	done
+# }
 
 [ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
 
@@ -85,14 +79,6 @@ if ${use_color} ; then
 		# PS1='\u@\h:\w\$'
 	else
 		PS1='\[\033[01;32m\][\u@\h\[\033[01;37m\] \W\[\033[01;32m\]]\$\[\033[00m\] '
-		# PS1='\u@\h:\w\$'
-		PS1='\[\033[01;32m\][\w] '
-
-		#PS1="${git_branch}"
-
-		#PS1="\u@\h:\w \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
-
-		# PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$'
 	fi
 
 	alias ls='ls --color=auto'
@@ -122,16 +108,16 @@ alias ll='clear && ls -lFh'
 alias lla='clear && ls -alFh'
 alias la='ls -A'
 alias l='ls -CF'
-alias dotgit='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+
 alias gif2mpeg='ffmpeg -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" video.mp4 -i'
 alias slack='slack-term'
-alias twitter='rainbowstream -s mine -24 -iot'
-alias spotifree='LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify'
+
 alias r='ranger'
 alias v=nvim
 alias vim=nvim
 alias n=newsboat
 alias feierabend='shutdown now'
+
 alias c='clear && curl https://corona-stats.online?top=30'
 
 
@@ -191,44 +177,12 @@ ex ()
 # better yaourt colors
 export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1;41;5:votes=1;44:dsc=0:other=1;35"
 
-#neofetch | lolcat -t
-#neofetch
-
-#figlet "Just do nothing. It is impossible." | lolcat
-#neofetch | lolcat
-#echo ""
-#cal -3 -w | lolcat
-#echo ""
-#pydf
-#free -h
-#figlet 'wbmnfktr' | lolcat -t
-# echo ""
-# echo "🍕 🍕 🍕   $(date)   🍔 🍔 🍔"
-# echo "  🤡 🌎"
-# echo ""
 
 PATH=$PATH:~/.local/bin
 export PATH="/home/alexander/.gem/ruby/2.6.0/bin:$PATH"
 
-# Import colorscheme from 'wal' asynchronously
-# &   # Run the process in the background.
-# ( ) # Hide shell job control messages.
-# (cat ~/.cache/wal/sequences &)
-
-# Alternative (blocks terminal for 0-3ms)
-#cat ~/.cache/wal/sequences
-
-# To add support for TTYs this line can be optionally added.
-#source ~/.cache/wal/colors-tty.sh
-# alias reset="reset; cat ~/.cache/wal/sequences"
-
-
-
-alias makebackupaca="rsync -av --delete /home/alexander/acahome/ /run/media/alexander/ssd1tb/x1fullbackup"
-
-
 export EDITOR="vim"
-export TERMINAL="termite"
+export TERMINAL="alacritty"
 export BROWSER="brave"
 export READER="zathura"
 export FILE="pcmanfm"
@@ -242,3 +196,16 @@ function _update_ps1() {
 if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
+
+
+#################
+### GRAVEYARD ###
+#################
+#
+# dotfiles repository moved
+# https://github.com/webmanufaktur/dotfiles
+# alias dotgit='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+#
+#################
+
+
