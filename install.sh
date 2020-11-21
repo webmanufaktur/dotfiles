@@ -29,6 +29,8 @@ echo "-> Restoring picom..."
 stow picom
 echo "-> Restoring profile..."
 stow profile
+echo "-> Restoring powerline-shell..."
+stow powerline-shell
 echo "-> Restoring qutebrowser..."
 stow qutebrowser
 echo "-> Restoring sxhkd..."
