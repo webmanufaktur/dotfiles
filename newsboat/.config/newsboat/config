@@ -7,7 +7,7 @@ notify-program "notify-send"
 notify-format "%d neue Artikel (%n ungelesene Artikel, %f ungelesene Feeds)"
 #confirm-exit yes
 show-read-feeds no
-suppress-first-reload no
+suppress-first-reload yes
 prepopulate-query-feeds yes
 #browser /home/alexander/scripts/newsboat-browser/newsboat-browser.sh &
 #browser brave
