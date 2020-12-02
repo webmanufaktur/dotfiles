@@ -68,3 +68,7 @@ super + shift + Return
 
 super + shift + p
     alacritty --class floating -e ~/scripts/tmuxstarter.sh
+
+super + shift + y
+    ~/scripts/resetscreen.sh
+
