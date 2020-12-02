@@ -7,7 +7,7 @@ default_border pixel 2
 # default_floating_border normal|none|pixel
 default_floating_border pixel 2
 # default_floating_border none
-for_window [class=".*"] border pixel 2
+# for_window [class=".*"] border pixel 2
 
 # HIDING EDGE BORDERS
 hide_edge_borders both
@@ -58,10 +58,17 @@ bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
+
+# SMART BORDERS 
+
+smart_borders on
+
+
 # Gaps
 gaps inner 14
-# gaps outer 0
+gaps outer 0
 smart_gaps on
+smart_gaps inverse_outer
 # Gaps changer
 bindsym $mod+g gaps inner current set 14
 bindsym $mod+n gaps inner current set 0
@@ -129,7 +136,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10 , workspace $ws10
 
 # bindsym $mod+Escape move container to workspace $ws10
 bindsym $mod+Escape move scratchpad
-bindsym $mod+Control+Tab scratchpad show
+bindsym $mod+u scratchpad show
 
 # bindcode 133 scratchpad show
 # bindsym $mod+Escape move container to workspace $ws9999
@@ -172,9 +179,9 @@ bar {
         position bottom
         strip_workspace_numbers yes
 
-        # mode hide
-        # hidden_state hide
-        # modifier $mod+Shift
+      #   mode hide
+      #  hidden_state hide
+      #  modifier $mod+Shift
 
 
 	colors {
@@ -236,6 +243,7 @@ exec --no-startup-id wal -R
 # exec --no-startup-id numlockx on
 exec --no-startup-id unclutter
 exec_always --no-startup-id sxhkd
+#   -c ~/.config/sxhkd/sxhkdrc
 
 
 
@@ -255,10 +263,10 @@ for_window [class="KeePassXC"] floating enable # sticky enable border normal
 for_window [class="mpv"] floating enable # sticky enable border normal
 for_window [class="cryptomator"] floating enable # sticky enable border normal
 for_window [class="Shutter"] floating enable # sticky enable border normal
-for_window [class="Pcmanfm"] floating enable # sticky enable border normal
-for_window [class="qutebrowser"] floating enable # sticky enable border normal
+# for_window [class="Pcmanfm"] floating enable # sticky enable border normal
+# for_window [class="qutebrowser"] floating enable # sticky enable border normal
 for_window [class="Xfce4-terminal"] floating enable # sticky enable border normal
-for_window [class="Alacritty"] floating enable # sticky enable border normal
+# for_window [class="Alacritty"] floating enable # sticky enable border normal
 #for_window [class="Termite"] floating enable # sticky enable border normal
 for_window [class="org.cryptomator.launcher.Cryptomator$MainApp"] floating enable # sticky enable border normal
 
@@ -267,8 +275,9 @@ for_window [class="org.cryptomator.launcher.Cryptomator$MainApp"] floating enabl
 
 # Monitor Setup
 #exec_always --no-startup-id xrandr --output DP1 --primary --mode 2560x1440 --pos 0x0 --rotate normal --output eDP1 --off
-exec_always --no-startup-id xrandr --output eDP1 --off --output DP1 --primary --mode 2560x1440 --pos 0x0 --rotate normal --output DP2 --off --output HDMI1 --off --output HDMI2 --off --output VIRTUAL1 --off
+#exec_always --no-startup-id xrandr --output eDP1 --off --output DP1 --primary --mode 2560x1440 --pos 0x0 --rotate normal --output DP2 --off --output HDMI1 --off --output HDMI2 --off --output VIRTUAL1 --off
 
+exec_always --no-startup-id xrandr --output eDP1 --off --output DP1 --mode 3440x1440 --pos 0x0 --rotate normal --output DP2 --off --output HDMI1 --off --output HDMI2 --off --output VIRTUAL1 --off
 # switch to workspace with urgent window automatically
 # for_window [urgent=latest] focus
 
@@ -314,3 +323,16 @@ assign [class="Gimp"] $ws99
 # https://askubuntu.com/a/830343  
 # exec_always --no-startup-id setxkbmap -option caps:escape -layout us,de -option grp:ctrl_alt_toggle
 # exec_always --no-startup-id setxkbmap -layout us,de -option grp:ctrl_alt_toggle
+
+
+
+for_window [instance="float"] border pixel 5
+for_window [instance="float"] floating enable
+for_window [instance="float"] resize set 960 720
+for_window [instance="float"] move position center
+for_window [instance="float"] border pixel 5
+
+for_window [instance="scratch"] floating enable
+for_window [instance="scratch"] resize set 960 720
+for_window [instance="scratch"] move position center
+#for_window [instance="musicplayer"] move scratchpad 
