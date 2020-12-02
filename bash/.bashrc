@@ -181,9 +181,9 @@ export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1
 PATH=$PATH:~/.local/bin
 export PATH="/home/alexander/.gem/ruby/2.6.0/bin:$PATH"
 
-export EDITOR="vim"
+export EDITOR="nvim"
 export TERMINAL="alacritty"
-export BROWSER="brave"
+export BROWSER="qutebrowser"
 export READER="zathura"
 export FILE="pcmanfm"
 
