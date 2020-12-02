@@ -72,7 +72,7 @@ call plug#end()
 
 " Load Gruvbox theme after entering Vim to ensure it's loaded
 "autocmd vimenter * colorscheme gruvbox
-colorscheme gruvbox
+colorscheme onedark
 set background=dark
 
 "Emmet config
