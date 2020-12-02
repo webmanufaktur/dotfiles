@@ -236,14 +236,21 @@ bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
 
 # Autostart
 exec --no-startup-id nm-applet
+exec --no-startup-id xfce4-power-manager
 exec --no-startup-id imwheel
-exec --no-startup-id lxsession
+exec --no-startup-id blueman-applet
+# exec --no-startup-id lxsession
+
+exec --no-startup-id nitrogen --restore;
+# sleep 1; picom -b
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id picom -b --config ~/.config/picom/picom.conf
 exec --no-startup-id wal -R
 # exec --no-startup-id numlockx on
 exec --no-startup-id unclutter
 exec_always --no-startup-id sxhkd
 #   -c ~/.config/sxhkd/sxhkdrc
+
 
 
 
@@ -277,7 +284,9 @@ for_window [class="org.cryptomator.launcher.Cryptomator$MainApp"] floating enabl
 #exec_always --no-startup-id xrandr --output DP1 --primary --mode 2560x1440 --pos 0x0 --rotate normal --output eDP1 --off
 #exec_always --no-startup-id xrandr --output eDP1 --off --output DP1 --primary --mode 2560x1440 --pos 0x0 --rotate normal --output DP2 --off --output HDMI1 --off --output HDMI2 --off --output VIRTUAL1 --off
 
-exec_always --no-startup-id xrandr --output eDP1 --off --output DP1 --mode 3440x1440 --pos 0x0 --rotate normal --output DP2 --off --output HDMI1 --off --output HDMI2 --off --output VIRTUAL1 --off
+# exec_always --no-startup-id xrandr --output eDP1 --off --output DP1 --mode 3440x1440 --pos 0x0 --rotate normal --output DP2 --off --output HDMI1 --off --output HDMI2 --off --output VIRTUAL1 --off
+# exec_always --no-startup-id xrandr --output eDP1 --off --output DP1 --mode 3440x1440 --pos 0x0 --rotate normal --output DP2 --off --output HDMI1 --off --output HDMI2 --off --output VIRTUAL1 --off
+# exec_always --no-startup-id xrandr --output eDP1 --off --output DP1 --mode 3440x1440 --pos 0x0 --rotate normal --output DP2 --off --output HDMI1 --off --output HDMI2 --off --output VIRTUAL1 --off
 # switch to workspace with urgent window automatically
 # for_window [urgent=latest] focus
 
