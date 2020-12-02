@@ -28,7 +28,7 @@ super + shift + d
     code & google-chrome-stable
 
 super + m
-    chromium
+    chromium --class="muskaat"
 
 super + s
     qutebrowser
@@ -47,3 +47,24 @@ super + ctrl + y
 
 super + ctrl + c
     flameshot full -p ~/Screenshots
+
+super + shift + a
+    alacritty --class scratch -e ncmpcpp
+
+super + shift + m
+    alacritty --class scratch -e neomutt
+
+super + shift + f
+    alacritty --class scratch -e ranger
+
+super + shift + n
+    alacritty --class scratch -e newsboat
+
+super + shift + c
+    pcmanfm ~/Screenshots
+
+super + shift + Return
+    alacritty --class floating
+
+super + shift + p
+    alacritty --class floating -e ~/scripts/tmuxstarter.sh
