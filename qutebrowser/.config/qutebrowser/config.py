@@ -14,7 +14,7 @@
 config.load_autoconfig()
 
 # Setting dark mode
-config.set("colors.webpage.darkmode.enabled", True)
+# config.set("colors.webpage.darkmode.enabled", True)
 
 
 # Which cookies to accept. With QtWebEngine, this setting also controls
@@ -180,4 +180,5 @@ config.bind('xt', 'config-cycle tabs.show always never')
 config.bind('xx', 'config-cycle statusbar.show always never;; config-cycle tabs.show always never')
 
 config.bind('M', 'hint links spawn mpv {hint-url}')
-config.bind('Y', 'hint links spawn st -e youtube-dl {hint-url}')
+config.bind('L', 'hint links spawn mpv --ytdl-raw-options=format=worst {hint-url}')
+config.bind('Y', 'hint links spawn alacritty -e youtube-dl {hint-url}')

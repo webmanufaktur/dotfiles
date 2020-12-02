@@ -18,6 +18,10 @@ settings:
         xb: config-cycle statusbar.show always never
         xs: config-cycle statusbar.show always never
         xt: config-cycle tabs.show always never
+  colors.webpage.darkmode.enabled:
+    global: false
+  colors.webpage.prefers_color_scheme_dark:
+    global: true
   content.cookies.accept:
     global: no-3rdparty
   content.cookies.store:
@@ -25,19 +29,29 @@ settings:
   content.javascript.enabled:
     global: true
   content.notifications:
+    https://processwire.com: true
     https://web.whatsapp.com: true
+    https://www.netflix.com: true
     https://www.reddit.com: false
+    https://www.sueddeutsche.de: false
   downloads.location.directory:
     global: ~/Downloads/
   downloads.location.prompt:
     global: false
+  downloads.remove_finished:
+    global: 5
   statusbar.show:
     global: always
   tabs.background:
     global: true
+  tabs.position:
+    global: top
   tabs.show:
     global: always
   url.default_page:
     global: https://start.duckduckgo.com/
+  url.searchengines:
+    global:
+      DEFAULT: https://www.ecosia.org/search?q={}
   url.start_pages:
     global: https://start.duckduckgo.com
