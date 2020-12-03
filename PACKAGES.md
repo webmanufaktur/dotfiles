@@ -8,7 +8,13 @@
 + blueman
 + bluez
 + bluez-utils
-+ brave firefox opera vivaldi chromium google-chrome vscodium-bin
++ brave 
++ firefox 
++ opera 
++ vivaldi 
++ chromium 
++ google-chrome 
++ vscodium-bin
 + curl
 + dex
 + filezilla
