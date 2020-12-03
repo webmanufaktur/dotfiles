@@ -8,17 +8,14 @@
 + blueman
 + bluez
 + bluez-utils
-+ brave 
-+ firefox 
-+ opera 
-+ vivaldi 
-+ chromium 
-+ google-chrome 
-+ vscodium-bin
++ brave
++ chromium
 + curl
 + dex
 + filezilla
++ firefox
 + flameshot
++ google-chrome
 + i3blocks
 + ibus-uniemoji
 + imwheel
@@ -35,6 +32,7 @@
 + nodejs
 + noto-fonts-emoji
 + nvim
++ opera
 + pass
 + pavucontrol
 + picom
@@ -45,5 +43,6 @@
 + stow
 + sxhkd
 + unclutter
++ vivaldi
 + vlc
-
++ vscodium-bin
