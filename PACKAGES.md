@@ -1,5 +1,6 @@
 # PACKAGES
 
+**yay -S PACKAGENAME**
 abook
 alacritty
 blueberry
