@@ -1,22 +1,40 @@
 # PACKAGES
 
+abook
 alacritty
-qutebrowser
-curl
-stow
-nvim
-neovim
-sxhkd
-picom
-nodejs
-i3blocks
-neofetch
-brave firefox opera vivaldi chromium google-chrome vscodium-bin
-dex
+blueberry
 blueman
-unclutter
+bluez
+bluez-utils
+brave firefox opera vivaldi chromium google-chrome vscodium-bin
+curl
+dex
 filezilla
-ranger
+flameshot
+i3blocks
+ibus-uniemoji
 imwheel
+isync
 kbdd-git
-
+mpd
+mpd
+msmtp
+ncmpcpp
+neofetch
+neomutt
+neovim
+newsboat
+nodejs
+noto-fonts-emoji
+nvim
+pass
+pavucontrol
+picom
+pulseaudio
+pulseaudio-bluetooth
+qutebrowser
+ranger
+stow
+sxhkd
+unclutter
+vlc
