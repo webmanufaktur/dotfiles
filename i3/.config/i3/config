@@ -68,7 +68,7 @@ smart_borders on
 gaps inner 14
 gaps outer 0
 smart_gaps on
-smart_gaps inverse_outer
+#smart_gaps inverse_outer
 # Gaps changer
 bindsym $mod+g gaps inner current set 14
 bindsym $mod+n gaps inner current set 0
