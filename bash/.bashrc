@@ -208,4 +208,5 @@ fi
 #
 #################
 
-
+stty ixany
+stty ixoff -ixon
