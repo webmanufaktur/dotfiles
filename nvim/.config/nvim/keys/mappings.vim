@@ -24,7 +24,7 @@ nnoremap <S-TAB> :bprevious<CR>
 
 " Alternate way to save
 nnoremap <C-s> :w<CR>
-
+inoremap <C-s> <esc>:w<CR>
 " Alternate way to quit
 nnoremap <C-Q> :wq!<CR>
 
