@@ -37,10 +37,10 @@ echo "-> Restoring sxhkd..."
 stow sxhkd
 echo "-> Restoring termite..."
 stow termite
-echo "-> Restoring vim..."
-stow vim
-echo "-> Restoring xbindkeysrc..."
-stow xbindkeysrc
+# echo "-> Restoring vim..."
+# stow vim
+# echo "-> Restoring xbindkeysrc..."
+# stow xbindkeysrc
 echo " "
 echo "################"
 echo "STOW finished..."
