@@ -33,7 +33,7 @@ dns="127.0.0.1  $1.test  www.$1.test"
 
 if [ ! -f "$1.hosts" ]; then
     echo "CREATING DNS ENTRY"
-    echo $dns >> abelt.hosts
+    echo $dns >> $1.hosts
 else
     echo "DNS ENTRY ALREADY EXISTS"
 fi
