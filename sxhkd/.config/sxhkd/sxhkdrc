@@ -7,16 +7,16 @@ super + Return
 # Browser
 
 super + b
-    brave
+   vivaldi-stable 
 
 super + shift + b
-    brave --incognito
+    vivaldi-stable --incognito
 
 super + o
     opera
 
 super + f
-    firefox
+    firejail firefox
 
 super + c
     google-chrome-stable
@@ -37,10 +37,10 @@ super + p
     pamac-manager
 
 super + e
-    pcmanfm ~/Schreibtisch/
+    pcmanfm
 
 super + t
-    thunderbird
+    firejail thunderbird
 
 super + ctrl + y 
     flameshot gui -p ~/Screenshots
@@ -67,8 +67,8 @@ super + shift + Return
     alacritty --class floating
 
 super + shift + p
-    alacritty --class floating -e ~/scripts/tmuxstarter.sh
+    alacritty --class floating -e ~/.scripts/tmuxstarter.sh
 
 super + shift + y
-    ~/scripts/resetscreen.sh
+    ~/.scripts/resetscreen.sh
 

@@ -42,7 +42,8 @@ floating_modifier $mod
 bindsym $mod+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec rofi -show run
+# bindsym $mod+d exec dmenu_run
 # bindsym $mod+shift+d exec dmenuunicode
 # bindsym $mod+d exec dmenu_run -nb "$bg" -nf "$fg" -sb "$fg" -sf "$bg"
 
@@ -65,8 +66,8 @@ smart_borders on
 
 
 # Gaps
-gaps inner 14
-gaps outer 0
+# gaps inner 14
+# gaps outer 0
 smart_gaps on
 #smart_gaps inverse_outer
 # Gaps changer
@@ -99,7 +100,7 @@ set $ws9   "9: 9 "
 set $ws10   "10: 10 "
 
 set $ws66   "66: MUSKAAT "
-set $ws77   "77: IRC "
+set $ws77   "77: NOTES "
 set $ws87   "87: EVOLUTION "
 set $ws88   "88: MAIL "
 set $ws89   "89: ANON "
@@ -249,6 +250,7 @@ exec --no-startup-id wal -R
 # exec --no-startup-id numlockx on
 exec --no-startup-id unclutter
 exec_always --no-startup-id sxhkd
+exec --no-startup-id protonmail-bridge
 #   -c ~/.config/sxhkd/sxhkdrc
 
 
@@ -292,7 +294,7 @@ for_window [class="org.cryptomator.launcher.Cryptomator$MainApp"] floating enabl
 
 assign [class="Opera"] $ws10
 #assign [class="qutebrowser"] $ws10
-assign [class="Hexchat"] $ws77
+assign [class="Joplin"] $ws10
 assign [class="Thunderbird"] $ws88
 assign [class="Evolution"] $ws87
 assign [class="Inkscape"] $ws98

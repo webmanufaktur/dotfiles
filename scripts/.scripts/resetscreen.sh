@@ -3,4 +3,14 @@ xrandr --output eDP1 --off --output DP1 --mode 3440x1440 --pos 0x0 --rotate norm
 
 sleep 1
 
+
+
+setxkbmap -layout us,de -option grp:ctrl_alt_toggle
+
+sleep 1
+
+
 nitrogen --restore
+
+i3-msg restart
+
