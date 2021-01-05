@@ -34,6 +34,7 @@ settings:
     https://www.netflix.com: true
     https://www.reddit.com: false
     https://www.sueddeutsche.de: false
+    https://www.youtube.com: false
   downloads.location.directory:
     global: ~/Downloads/
   downloads.location.prompt:
