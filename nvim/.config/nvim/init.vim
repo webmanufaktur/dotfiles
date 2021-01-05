@@ -10,34 +10,67 @@ endif
 " Plugins Managed
 call plug#begin('~/.local/share/nvim/site/autoload/')
 
-    Plug 'tpope/vim-fugitive'
-    Plug 'mhinz/vim-signify'
-    Plug 'junegunn/goyo.vim'
-    Plug 'junegunn/limelight.vim'
-    Plug 'lilydjwg/colorizer'
-    Plug '907th/vim-auto-save'
+    " File / directory browser
     Plug 'preservim/nerdtree'
-    "Plug 'vimwiki/vimwiki'
+
+    " Airline... 
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
-    "Plug 'gorodinskiy/vim-coloresque'
+    
+    " Theming
     Plug 'morhetz/gruvbox'
     Plug 'joshdick/onedark.vim'
-    Plug 'kristijanhusak/vim-hybrid-material'
-    Plug 'dracula/vim', { 'as': 'dracula' }
+    
+    " show colors like #ff3300 inline
+    Plug 'lilydjwg/colorizer'
+
+    " i3 Syntax Highlighting
     Plug 'PotatoesMaster/i3-vim-syntax'
-    "Plug 'prettier/vim-prettier', {
-           "\ 'do': 'yarn install',
-           "\ 'for': ['javascript', 'sass', 'php', 'css', 'less', 'scss', 'json', 'html'] } 
+
+    " easy brackets, braces and parentheses
     Plug 'jiangmiao/auto-pairs'
     Plug 'tpope/vim-surround'
-    Plug 'mattn/emmet-vim'
+
+    " Fuzzyfinder
     Plug 'junegunn/fzf', { 'do': { -> fzf#install()  }  }
     Plug 'junegunn/fzf.vim'
+
+    " Intellisense
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+    " Linter
+    Plug 'dense-analysis/ale'
+    Plug 'prettier/vim-prettier', {
+        \ 'do': 'yarn install',
+        \ 'branch': 'release/1.x',
+        \ 'for': [
+        \ 'javascript',
+        \ 'css',
+        \ 'less',
+        \ 'scss',
+        \ 'json',
+        \ 'markdown',
+        \ 'php',
+        \ 'html' ] }
+
+    " File and folder icons in NerdTree
     Plug 'lambdalisue/glyph-palette.vim'
     Plug 'Xuyuanp/nerdtree-git-plugin'
     Plug 'ryanoasis/vim-devicons'
+
+    " Writing tools
+    Plug 'junegunn/goyo.vim' " centered view / minimal writer
+    Plug 'junegunn/limelight.vim' " line or paragraph focus
+    Plug '907th/vim-auto-save' " auto save changes => settings.vim
+
+    " unused Plugins
+    Plug 'mattn/emmet-vim'
+    "Plug 'vimwiki/vimwiki'
+    "Plug 'gorodinskiy/vim-coloresque'
+    
+    " Git plugins
+    " Plug 'tpope/vim-fugitive'
+    " Plug 'mhinz/vim-signify'
 
 call plug#end()
 

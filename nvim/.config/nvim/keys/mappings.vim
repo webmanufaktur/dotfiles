@@ -59,9 +59,12 @@ nnoremap <leader>ev :e $MYVIMRC<CR>
 nnoremap <C-p> :FZF<CR>
 
 
+" Enable control-backspace to delete last word
+" inoremap <C-H> <C-W>
 
-map <leader>g :Goyo<CR>
 
+autocmd Filetype markdown map <leader>g :Goyo<CR>
+autocmd Filetype markdown map <C-R> :setlocal spell! spelllang=de_de<CR>
 " Goyo & Limelight
 " set Goyo colors (https://jonasjacek.github.io/colors/)
 let g:limelight_conceal_ctermfg = 240
@@ -69,3 +72,15 @@ let g:limelight_conceal_ctermfg = 240
 " auto enable Limelight in case of Goyo
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
+
+
+" cheap IDE and little helpers
+" HTML Helpers - h1, h2, h3... some others
+"
+" PHP Helpers - <?php ?> function and similar
+"
+"
+"
+"
+"
+"

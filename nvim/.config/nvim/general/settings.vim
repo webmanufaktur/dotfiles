@@ -9,7 +9,7 @@ filetype plugin on
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set showcmd
 set nocompatible
- set nowrap                              " Display long lines as just one line
+set nowrap                              " Display long lines as just one line
 set encoding=utf-8                      " The encoding displayed
 set pumheight=10                        " Makes popup menu smaller
 set fileencoding=utf-8                  " The encoding written to file
@@ -26,6 +26,7 @@ set shiftwidth=4                        " Change the number of space characters 
 set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
 set expandtab                           " Converts tabs to spaces
 set shiftwidth=4 softtabstop=4 expandtab
+set list listchars=nbsp:¬,tab:»·,trail:·,extends:>  
 
 set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
@@ -43,18 +44,19 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 "set autochdir                           " Your working directory will always
                                         "be the same as your working directory
 
-
-
 set so=999
 set hlsearch
 set smartcase
 set ignorecase
 set incsearch
 
+set spelllang=de
+
 " set textwidth=80
 
 " enable auto-save in .md (Markdown) files
-" autocmd FileType markdown set linebreak
+autocmd FileType markdown set linebreak
+autocmd FileType markdown set wrap
 autocmd Filetype markdown let g:auto_save = 1
 let g:auto_save_events = ["InsertLeave", "TextChanged", "CursorHoldI"]
 "
@@ -122,3 +124,17 @@ augroup my-glyph-palette
   autocmd FileType fern call glyph_palette#apply()
   autocmd FileType nerdtree,startify call glyph_palette#apply()
 augroup END
+
+"let g:ale_fixers={
+"  \'javascript': ['prettier'],
+"  \'json': ['prettier'],
+"  \'php': ['prettier'],
+"\}
+"
+"let g:ale_fix_on_save = 1
+"
+"
+" FOLDING
+"
+autocmd BufWinLeave *.* silent mkview 
+autocmd BufWinEnter *.* silent loadview  
