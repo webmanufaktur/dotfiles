@@ -5,7 +5,7 @@ sleep 1
 
 
 
-setxkbmap -layout us,de -option grp:ctrl_alt_toggle
+setxkbmap -layout us,de -variant intl -option grp:ctrl_alt_toggle
 
 sleep 1
 

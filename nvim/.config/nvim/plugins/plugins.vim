@@ -24,7 +24,7 @@ call plug#begin()
     Plug 'morhetz/gruvbox'
     Plug 'joshdick/onedark.vim'
     Plug 'kristijanhusak/vim-hybrid-material'
-    Plug 'dracula/vim', { 'as': 'dracula' }
+    " Plug 'dracula/vim', { 'as': 'dracula' }
     Plug 'PotatoesMaster/i3-vim-syntax'
     "Plug 'prettier/vim-prettier', {
            "\ 'do': 'yarn install',

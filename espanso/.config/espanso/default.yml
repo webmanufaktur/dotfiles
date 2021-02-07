@@ -11,9 +11,9 @@ matches:
   - trigger: ":espanso"
     replace: "Hi there!"
 
-  # Simple text replacement
-  - trigger: ":espanso"
-    replace: "Hi there!"
+  - trigger: ":mfg"
+    replace: "Mit freundlichen Grüßen"
+
   # Dates
   - trigger: ":date"
     replace: "{{mydate}}"

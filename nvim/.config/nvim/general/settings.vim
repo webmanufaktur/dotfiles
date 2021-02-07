@@ -125,16 +125,19 @@ augroup my-glyph-palette
   autocmd FileType nerdtree,startify call glyph_palette#apply()
 augroup END
 
-"let g:ale_fixers={
-"  \'javascript': ['prettier'],
-"  \'json': ['prettier'],
-"  \'php': ['prettier'],
-"\}
+let g:ale_fixers={
+  \'javascript': ['prettier'],
+  \'json': ['prettier'],
+  \'php': ['prettier'],
+\}
 "
+"let g:prettier#autoformat_require_pragma = 0
+"let g:prettier#autoformat = 1
 "let g:ale_fix_on_save = 1
+"let g:ale_linters_explicit = 1
 "
 "
 " FOLDING
-"
-autocmd BufWinLeave *.* silent mkview 
-autocmd BufWinEnter *.* silent loadview  
+" "
+" autocmd BufWinLeave *.* silent mkview 
+" autocmd BufWinEnter *.* silent loadview  

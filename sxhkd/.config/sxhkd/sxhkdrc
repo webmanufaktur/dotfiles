@@ -7,10 +7,10 @@ super + Return
 # Browser
 
 super + b
-   vivaldi-stable 
+    brave
 
 super + shift + b
-    vivaldi-stable --incognito
+    brave --incognito
 
 super + o
     opera
@@ -40,7 +40,7 @@ super + e
     pcmanfm
 
 super + t
-    firejail thunderbird
+    thunderbird
 
 super + ctrl + y 
     flameshot gui -p ~/Screenshots

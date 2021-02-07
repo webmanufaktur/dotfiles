@@ -39,7 +39,7 @@ call plug#begin('~/.local/share/nvim/site/autoload/')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
     " Linter
-    Plug 'dense-analysis/ale'
+    " Plug 'dense-analysis/ale'
     Plug 'prettier/vim-prettier', {
         \ 'do': 'yarn install',
         \ 'branch': 'release/1.x',
@@ -64,7 +64,8 @@ call plug#begin('~/.local/share/nvim/site/autoload/')
     Plug '907th/vim-auto-save' " auto save changes => settings.vim
 
     " unused Plugins
-    Plug 'mattn/emmet-vim'
+    " Plug 'mattn/emmet-vim'
+    Plug 'editorconfig/editorconfig-vim'
     "Plug 'vimwiki/vimwiki'
     "Plug 'gorodinskiy/vim-coloresque'
     

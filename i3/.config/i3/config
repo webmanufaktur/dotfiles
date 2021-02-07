@@ -42,8 +42,8 @@ floating_modifier $mod
 bindsym $mod+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec rofi -show run
-# bindsym $mod+d exec dmenu_run
+# bindsym $mod+d exec rofi -show run
+bindsym $mod+d exec dmenu_run
 # bindsym $mod+shift+d exec dmenuunicode
 # bindsym $mod+d exec dmenu_run -nb "$bg" -nf "$fg" -sb "$fg" -sf "$bg"
 
@@ -105,7 +105,7 @@ set $ws87   "87: EVOLUTION "
 set $ws88   "88: MAIL "
 set $ws89   "89: ANON "
 set $ws98   "98: INKSCAPE "
-set $ws99   "99: GIMP "
+set $ws99   "99: VARIOUS"
 
 # set $ws9999   "9999: ¯\_(ツ)_/¯ "
 
@@ -299,6 +299,7 @@ assign [class="Thunderbird"] $ws88
 assign [class="Evolution"] $ws87
 assign [class="Inkscape"] $ws98
 assign [class="Gimp"] $ws99
+assign [class="Signal"] $ws99
 
 
 ##############################
