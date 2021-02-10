@@ -250,7 +250,8 @@ exec --no-startup-id wal -R
 # exec --no-startup-id numlockx on
 exec --no-startup-id unclutter
 exec_always --no-startup-id sxhkd
-exec --no-startup-id protonmail-bridge
+exec --no-startup-id protonmail-bridge --no-window
+exec --no-startup-id cryptomator
 #   -c ~/.config/sxhkd/sxhkdrc
 
 
