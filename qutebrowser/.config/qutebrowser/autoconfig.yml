@@ -29,6 +29,7 @@ settings:
   content.javascript.enabled:
     global: true
   content.notifications:
+    https://app.slack.com: true
     https://processwire.com: true
     https://web.whatsapp.com: true
     https://www.netflix.com: true
