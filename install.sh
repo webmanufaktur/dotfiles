@@ -11,6 +11,8 @@ echo "-> Restoring compton..."
 stow compton
 echo "-> Restoring i3..."
 stow i3
+echo "-> Restoring Git..."
+stow git
 echo "-> Restoring imwheel..."
 stow imwheel
 echo "-> Restoring mimeapps.list..."
