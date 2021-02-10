@@ -1,0 +1,41 @@
+[user]
+    email = info@webmanufaktur.net
+    name = Alexander Abelt
+
+[core]
+    editor = nvim
+    excludesfile = ~/.gitignore
+
+[push]
+    default = simple
+
+[color]
+    status = auto
+    diff = auto
+    branch = auto
+    interactive = auto
+    grep = auto
+    ui = auto
+
+[alias]
+    a = "!git status --short | peco | awk '{print $2}' | xargs git add"
+    ps = "!git push origin $(git rev-parse --abbrev-ref HEAD)"
+    pl = "!git pull origin $(git rev-parse --abbrev-ref HEAD)"
+    d = diff
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+    ba = branch -a
+    df = "!git hist | peco | awk '{print $2}' | xargs -I {} git diff {}^ {}"
+    hist = log --pretty=format:\"%Cgreen%h %Creset%cd %Cblue[%cn] %Creset%s%C(yellow)%d%C(reset)\" --graph --date=relative --decorate --all
+    llog = log --graph --name-status --pretty=format:\"%C(red)%h %C(reset)(%cd) %C(green)%an %Creset%s %C(yellow)%d%Creset\" --date=relative
+
+[pull]
+    rebase = false
+
+
+
+# mostly copied from
+# https://github.com/craftzdog/dotfiles-public/blob/master/.gitconfig
+
