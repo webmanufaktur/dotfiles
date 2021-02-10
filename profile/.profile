@@ -5,4 +5,4 @@ export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 export BROWSER="/usr/bin/qutebrowser"
 setxkbmap -option caps:escape 
 #setxkbmap -layout us,de -variant intl -option grp:ctrl_alt_toggle
-
+export PATH=~/.npm-global/bin:$PATH
