@@ -26,6 +26,8 @@ settings:
     global: no-3rdparty
   content.cookies.store:
     global: true
+  content.geolocation:
+    https://www.google.de: false
   content.javascript.enabled:
     global: true
   content.notifications:

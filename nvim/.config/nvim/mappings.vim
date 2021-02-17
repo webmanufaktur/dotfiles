@@ -84,3 +84,10 @@ autocmd! User GoyoLeave Limelight!
 "
 "
 "
+" Ctrl + a 
+" select all
+nnoremap <C-a> <esc>gg <S-v> G
+inoremap <C-a> <esc>gg <S-v> G
+
+
+

@@ -6,3 +6,7 @@ export BROWSER="/usr/bin/qutebrowser"
 setxkbmap -option caps:escape 
 #setxkbmap -layout us,de -variant intl -option grp:ctrl_alt_toggle
 export PATH=~/.npm-global/bin:$PATH
+
+
+export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+export PATH="$PATH:$GEM_HOME/bin"

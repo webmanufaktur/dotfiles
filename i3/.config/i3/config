@@ -300,7 +300,7 @@ assign [class="Thunderbird"] $ws88
 assign [class="Evolution"] $ws87
 assign [class="Inkscape"] $ws98
 assign [class="Gimp"] $ws99
-assign [class="Signal"] $ws99
+# assign [class="Signal"] $ws99
 
 
 ##############################

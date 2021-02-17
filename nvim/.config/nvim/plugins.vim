@@ -19,7 +19,8 @@ call plug#begin('~/.local/share/nvim/site/autoload/')
     Plug 'vim-airline/vim-airline-themes'
     
     " Theming
-    Plug 'morhetz/gruvbox'
+    " Plug 'morhetz/gruvbox'
+    Plug 'gruvbox-community/gruvbox'
     Plug 'joshdick/onedark.vim'
     
     " show colors like #ff3300 inline
@@ -71,7 +72,11 @@ call plug#begin('~/.local/share/nvim/site/autoload/')
     "Plug 'gorodinskiy/vim-coloresque'
     
     " Git plugins
-    " Plug 'tpope/vim-fugitive'
-    " Plug 'mhinz/vim-signify'
+    Plug 'tpope/vim-fugitive'
+    Plug 'junegunn/gv.vim'
+    Plug 'tpope/vim-rhubarb'
+    Plug 'mhinz/vim-signify'
+
+    Plug 'mhinz/vim-startify'
 
 call plug#end()

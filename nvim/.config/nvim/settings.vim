@@ -41,11 +41,11 @@ set updatetime=300                      " Faster completion
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
 "set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
-"set autochdir                           " Your working directory will always
+" set autochdir                           " Your working directory will always
                                         "be the same as your working directory
 
 set so=999
-set hlsearch
+set nohlsearch
 set smartcase
 set ignorecase
 set incsearch
@@ -73,11 +73,12 @@ if (empty($TMUX))
 endif
 
 
-colorscheme onedark
+colorscheme gruvbox
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm
 
 
 
 
-
+"let g:netrw_banner=0
+"let loaded_netrwPlugin = 1

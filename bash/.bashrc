@@ -180,7 +180,12 @@ export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1
 
 
 PATH=$PATH:~/.local/bin
-export PATH="/home/alexander/.gem/ruby/2.6.0/bin:$PATH"
+export PATH="/opt/ruby2.6/bin/:$PATH"
+
+#export PATH="/home/aca/.local/share/gem/ruby/2.7.0/gems/:$PATH"
+#export PATH="/home/aca/.local/share/gem/ruby/2.7.0/bin/:$PATH"
+#export PATH=$PATH":/home/aca/.local/share/gem/ruby/2.7.0/bin/"
+export PATH="/home/aca/.gem/ruby/2.6.0/bin:$PATH"
 
 export EDITOR="nvim"
 export TERMINAL="alacritty"

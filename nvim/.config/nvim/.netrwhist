@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/aca/www/voss.test'
+let g:netrw_dirhist_4='/home/aca/www/webmanufaktur.test'
+let g:netrw_dirhist_3='/home/aca/www/voss.test'
+let g:netrw_dirhist_2='/home/aca/www/nmd.test'
+let g:netrw_dirhist_1='/home/aca/www/voss.test'
